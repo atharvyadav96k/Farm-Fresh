@@ -1,3 +1,4 @@
+![Description of image](https://i.postimg.cc/gjcKMnKp/Screenshot-2024-11-10-233119.png)
 # FarmFresh
   FarmFresh is a local e-commerce platform designed to connect farmers directly with consumers in rural areas. Built using Express, EJS, and Mongoose, this platform enables farmers to list their products and allows consumers to browse locally available goods. With FarmFresh, village communities can promote local commerce by buying fresh produce and products from nearby farms, supporting local farmers.
 ## Features
