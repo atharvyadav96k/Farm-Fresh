@@ -1,0 +1,15 @@
+.image{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 3/2;
+}
+.card{
+    margin-bottom: 30px;
+}
+#pImage, #map{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 3/2;
+}
