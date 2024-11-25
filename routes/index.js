@@ -6,6 +6,19 @@ const productModel = require("./product")
 const userModel = require('./users');
 passport.use(new localStrategy(userModel.authenticate()));
 
+app.get('/sitemap.xml', (req, res) => {
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+      <loc>https://yourdomain.com/</loc>
+      <changefreq>daily</changefreq>
+      <priority>1.0</priority>
+    </url>
+  </urlset>`;
+  
+  res.header('Content-Type', 'application/xml');
+  res.send(sitemap);
+});
 router.get('/post', isLoggedIn, function (req, res) {
   res.render('post');
 })
